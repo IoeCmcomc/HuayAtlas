@@ -1,0 +1,15 @@
+[remap]
+
+importer="json-minify"
+type="PackedDataContainer"
+path="res://.import/countries_borders.geojson-30528d17b92199ed29fafa68d490bb6d.res"
+
+[deps]
+
+source_file="res://data/countries_borders.geojson"
+dest_files=[ "res://.import/countries_borders.geojson-30528d17b92199ed29fafa68d490bb6d.res" ]
+
+[params]
+
+binary=true
+compression=5

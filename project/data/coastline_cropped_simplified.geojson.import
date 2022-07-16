@@ -1,0 +1,15 @@
+[remap]
+
+importer="json-minify"
+type="PackedDataContainer"
+path="res://.import/coastline_cropped_simplified.geojson-5063e2d75090a940f88ffb98a59cdfb4.res"
+
+[deps]
+
+source_file="res://data/coastline_cropped_simplified.geojson"
+dest_files=[ "res://.import/coastline_cropped_simplified.geojson-5063e2d75090a940f88ffb98a59cdfb4.res" ]
+
+[params]
+
+binary=true
+compression=5

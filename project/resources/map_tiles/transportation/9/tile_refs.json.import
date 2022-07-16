@@ -1,0 +1,15 @@
+[remap]
+
+importer="json-minify"
+type="PackedDataContainer"
+path="res://.import/tile_refs.json-64a9b8c60d786675d7803b46b588719b.res"
+
+[deps]
+
+source_file="res://resources/map_tiles/transportation/9/tile_refs.json"
+dest_files=[ "res://.import/tile_refs.json-64a9b8c60d786675d7803b46b588719b.res" ]
+
+[params]
+
+binary=true
+compression=5

@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://resources/themes/default.tres" type="Theme" id=2]
+
+[node name="PopupDialog" type="PopupDialog"]
+visible = true
+margin_right = 512.0
+margin_bottom = 487.0
+theme = ExtResource( 2 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 56.0
+margin_top = 52.0
+margin_right = 456.0
+margin_bottom = 434.0
+rect_min_size = Vector2( 400, 0 )
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer"]
+margin_left = 100.0
+margin_right = 300.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 200, 200 )
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CenterContainer/VBoxContainer"]
+margin_top = 204.0
+margin_right = 400.0
+margin_bottom = 354.0
+rect_min_size = Vector2( 200, 150 )
+bbcode_enabled = true
+bbcode_text = "[center][rainbow freq=0.1 sat=5 val=0.9]HuayAtlas – Phần mềm tập bản đồ địa lý Việt Nam ngoại tuyến[/rainbow]
+
+Phiên bản: 0.1.0
+Tác giả: Dương Xuân Hợp
+Phiên bản Godot: 3,4,4
+[/center]"
+text = "HuayAtlas – Phần mềm tập bản đồ địa lý Việt Nam ngoại tuyến
+
+Phiên bản: 0.1.0
+Tác giả: Dương Xuân Hợp
+Phiên bản Godot: 3,4,4
+"
+scroll_active = false
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 358.0
+margin_right = 400.0
+margin_bottom = 382.0
+text = "(nháy chuột ra ngoài để đóng hộp thoại)"
+align = 1

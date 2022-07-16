@@ -1,0 +1,15 @@
+[remap]
+
+importer="json-minify"
+type="PackedDataContainer"
+path="res://.import/populated_places.geojson-248294b0cebfcc1ef8fdc2246570c51a.res"
+
+[deps]
+
+source_file="res://data/populated_places.geojson"
+dest_files=[ "res://.import/populated_places.geojson-248294b0cebfcc1ef8fdc2246570c51a.res" ]
+
+[params]
+
+binary=true
+compression=5

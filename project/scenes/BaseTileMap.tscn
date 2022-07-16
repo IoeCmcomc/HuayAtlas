@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/TileMapLayer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/godot-touch-camera-2d/TouchCamera2D.gd" type="Script" id=2]
+[ext_resource path="res://scenes/BaseTileMap.gd" type="Script" id=4]
+
+[node name="BaseTileMap" type="Node2D"]
+position = Vector2( 0, 2 )
+script = ExtResource( 4 )
+map_type = "administrative"
+
+[node name="StaticLayer" parent="." instance=ExtResource( 1 )]
+map_type = "administrative"
+zoom_level = 5
+manual_loading = true
+
+[node name="TileMapLayer" parent="." instance=ExtResource( 1 )]
+map_type = "administrative"
+zoom_level = 5
+
+[node name="TouchCamera2D" type="Camera2D" parent="."]
+current = true
+limit_left = -100000000
+limit_top = -100000000
+limit_right = 100000000
+limit_bottom = 100000000
+script = ExtResource( 2 )
+min_zoom = 1.0
+max_zoom = 35.0
+mouse_zoom_factor = Vector2( 0.8, 0.8 )

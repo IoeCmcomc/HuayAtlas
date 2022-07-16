@@ -1,0 +1,15 @@
+[remap]
+
+importer="json-minify"
+type="PackedDataContainer"
+path="res://.import/vietnam_province_borders.geojson-b9abe0694e4006288c2a52420c68ca89.res"
+
+[deps]
+
+source_file="res://data/vietnam_province_borders.geojson"
+dest_files=[ "res://.import/vietnam_province_borders.geojson-b9abe0694e4006288c2a52420c68ca89.res" ]
+
+[params]
+
+binary=true
+compression=5

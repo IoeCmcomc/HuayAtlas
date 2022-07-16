@@ -1,0 +1,15 @@
+[remap]
+
+importer="json-minify"
+type="PackedDataContainer"
+path="res://.import/vietnam_seaports.geojson-9981d0f9e75d188e9d8d9f9975e3fe9e.res"
+
+[deps]
+
+source_file="res://data/vietnam_seaports.geojson"
+dest_files=[ "res://.import/vietnam_seaports.geojson-9981d0f9e75d188e9d8d9f9975e3fe9e.res" ]
+
+[params]
+
+binary=true
+compression=5

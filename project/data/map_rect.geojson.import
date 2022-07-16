@@ -1,0 +1,15 @@
+[remap]
+
+importer="json-minify"
+type="PackedDataContainer"
+path="res://.import/map_rect.geojson-190d416a72036faaf91e7c10ac228aae.res"
+
+[deps]
+
+source_file="res://data/map_rect.geojson"
+dest_files=[ "res://.import/map_rect.geojson-190d416a72036faaf91e7c10ac228aae.res" ]
+
+[params]
+
+binary=true
+compression=5
