@@ -43,4 +43,4 @@ Tải phiên bản mới nhất tại [đây](https://github.com/IoeCmcomc/HuayA
 
 ## Giấy phép
 
-Phần mềm được phát hành dưới giấy phép MIT. Xem [LICENSE](https://github.com/IoeCmcomc/HuayAtlas/blob/main/LICENSE.md) để biết thêm thông tin.
+Phần mềm được phát hành dưới giấy phép MIT. Xem [LICENSE](https://github.com/IoeCmcomc/HuayAtlas/blob/main/LICENSE) để biết thêm thông tin.
