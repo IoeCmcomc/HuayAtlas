@@ -3,11 +3,12 @@ extends MarginContainer
 signal basemap_type_changed(type)
 signal zoom_in_clicked
 signal zoom_out_clicked
+signal location_clicked
 
 var about_dialog: PopupDialog = preload("res://scenes/ui/AboutDialog.tscn").instance()
 
-onready var type_chooser := $"VBox/HBox/PanelContainer/Grid/TypeChooser"
-onready var menu_btn := $"VBox/HBox/MenuBtn"
+onready var type_chooser := $"%TypeChooser"
+onready var menu_btn := $"%MenuBtn"
 
 func _ready():
 	type_chooser.set_item_metadata(0, "sentinel")
@@ -34,3 +35,11 @@ func _on_ZoomOut_pressed():
 func _on_menu_item_pressed(id: int):
 	if id == 0:
 		about_dialog.popup_centered()
+
+
+func _on_Location_pressed():
+	emit_signal("location_clicked")
+
+
+func _on_Node2D_location_detected():
+	$"%Location".disabled = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://2dmap.gd" type="Script" id=1]
 [ext_resource path="res://scenes/GeoJsonLayer.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://scripts/godot-touch-camera-2d/TouchCamera2D.gd" type="Script" id=4]
 [ext_resource path="res://scripts/Grid.gd" type="Script" id=5]
 [ext_resource path="res://scenes/ui/map.tscn" type="PackedScene" id=6]
+[ext_resource path="res://resources/spites/location_marker.png" type="Texture" id=7]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -31,13 +32,18 @@ file_path = "res://data/populated_places.geojson"
 file_path = "res://data/map_rect.geojson"
 color = Color( 0, 0, 0, 1 )
 
+[node name="LocationMarker" type="Sprite" parent="."]
+visible = false
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 7 )
+
 [node name="Polygon2D" type="Polygon2D" parent="."]
 color = Color( 0.219608, 0.780392, 1, 0.00392157 )
 polygon = PoolVector2Array( 0, 0, 256, 0, 256, 256, 0, 256 )
 
 [node name="TouchCamera2D" type="Camera2D" parent="."]
 current = true
-zoom = Vector2( 26, 26 )
+zoom = Vector2( 33, 33 )
 limit_left = 397025
 limit_top = 222251
 limit_right = 446962
@@ -45,7 +51,7 @@ limit_bottom = 253815
 editor_draw_limits = true
 script = ExtResource( 4 )
 min_zoom = 1.0
-max_zoom = 28.0
+max_zoom = 36.0
 mouse_zoom_factor = Vector2( 0.9, 0.9 )
 zoom_speed = 15.0
 
@@ -57,8 +63,10 @@ color = Color( 0, 0.952941, 1, 0.972549 )
 
 [node name="Map UI" parent="TouchCamera2D/CanvasLayer" instance=ExtResource( 6 )]
 
+[connection signal="location_detected" from="." to="TouchCamera2D/CanvasLayer/Map UI" method="_on_Node2D_location_detected"]
 [connection signal="redraw_requested" from="TouchCamera2D" to="GeoJsonLayer4" method="update"]
 [connection signal="redraw_requested" from="TouchCamera2D" to="TouchCamera2D/CanvasLayer/Grid" method="update"]
 [connection signal="basemap_type_changed" from="TouchCamera2D/CanvasLayer/Map UI" to="." method="_on_Map_UI_basemap_type_changed"]
+[connection signal="location_clicked" from="TouchCamera2D/CanvasLayer/Map UI" to="." method="_on_Map_UI_location_clicked"]
 [connection signal="zoom_in_clicked" from="TouchCamera2D/CanvasLayer/Map UI" to="." method="_on_Map_UI_zoom_in_clicked"]
 [connection signal="zoom_out_clicked" from="TouchCamera2D/CanvasLayer/Map UI" to="." method="_on_Map_UI_zoom_out_clicked"]

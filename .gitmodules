@@ -1,0 +1,3 @@
+[submodule "gdnative/godot-location-plugin"]
+	path = android-plugins/godot-location-plugin
+	url = https://github.com/cagdasc/godot-location-plugin.git

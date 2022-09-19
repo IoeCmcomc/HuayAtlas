@@ -14,7 +14,7 @@ dest_files=[ "res://.import/459.jpg-58f033a11d390b131fba1e7ef42cf8f6.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=1
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0

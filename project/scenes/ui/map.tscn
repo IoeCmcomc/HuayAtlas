@@ -15,8 +15,8 @@ theme = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="VBox" type="VBoxContainer" parent="."]
-margin_right = 1536.0
-margin_bottom = 836.0
+margin_right = 1216.0
+margin_bottom = 656.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -24,11 +24,12 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="HBox" type="HBoxContainer" parent="VBox"]
-margin_right = 1536.0
+margin_right = 1216.0
 margin_bottom = 72.0
 mouse_filter = 2
 
 [node name="MenuBtn" type="MenuButton" parent="VBox/HBox"]
+unique_name_in_owner = true
 margin_right = 42.0
 margin_bottom = 42.0
 rect_min_size = Vector2( 42, 42 )
@@ -39,14 +40,14 @@ items = [ " Giới thiệu", null, 0, false, false, 0, 0, null, "", false ]
 
 [node name="Control" type="Control" parent="VBox/HBox"]
 margin_left = 46.0
-margin_right = 1395.0
+margin_right = 1075.0
 margin_bottom = 72.0
 mouse_filter = 2
 size_flags_horizontal = 3
 
 [node name="PanelContainer" type="PanelContainer" parent="VBox/HBox"]
-margin_left = 1399.0
-margin_right = 1536.0
+margin_left = 1079.0
+margin_right = 1216.0
 margin_bottom = 72.0
 
 [node name="Grid" type="GridContainer" parent="VBox/HBox/PanelContainer"]
@@ -61,6 +62,7 @@ margin_bottom = 24.0
 text = "Bản đồ nền: "
 
 [node name="TypeChooser" type="OptionButton" parent="VBox/HBox/PanelContainer/Grid"]
+unique_name_in_owner = true
 margin_top = 28.0
 margin_right = 123.0
 margin_bottom = 58.0
@@ -70,35 +72,44 @@ selected = 1
 
 [node name="HBox2" type="HBoxContainer" parent="VBox"]
 margin_top = 76.0
-margin_right = 1536.0
-margin_bottom = 768.0
+margin_right = 1216.0
+margin_bottom = 554.0
 mouse_filter = 2
 size_flags_vertical = 3
 
 [node name="HBox3" type="HBoxContainer" parent="VBox"]
-margin_top = 772.0
-margin_right = 1536.0
-margin_bottom = 836.0
+margin_top = 558.0
+margin_right = 1216.0
+margin_bottom = 656.0
 mouse_filter = 2
 alignment = 2
 
 [node name="VBox" type="VBoxContainer" parent="VBox/HBox3"]
-margin_left = 1507.0
-margin_right = 1536.0
-margin_bottom = 64.0
+margin_left = 1187.0
+margin_right = 1216.0
+margin_bottom = 98.0
 mouse_filter = 2
 
-[node name="ZoomIn" type="Button" parent="VBox/HBox3/VBox"]
+[node name="Location" type="Button" parent="VBox/HBox3/VBox"]
+unique_name_in_owner = true
 margin_right = 29.0
 margin_bottom = 30.0
-text = ""
+disabled = true
+text = ""
 
-[node name="ZoomOut" type="Button" parent="VBox/HBox3/VBox"]
+[node name="ZoomIn" type="Button" parent="VBox/HBox3/VBox"]
 margin_top = 34.0
 margin_right = 29.0
 margin_bottom = 64.0
+text = ""
+
+[node name="ZoomOut" type="Button" parent="VBox/HBox3/VBox"]
+margin_top = 68.0
+margin_right = 29.0
+margin_bottom = 98.0
 text = ""
 
 [connection signal="item_selected" from="VBox/HBox/PanelContainer/Grid/TypeChooser" to="." method="_on_TypeChooser_item_selected"]
+[connection signal="pressed" from="VBox/HBox3/VBox/Location" to="." method="_on_Location_pressed"]
 [connection signal="pressed" from="VBox/HBox3/VBox/ZoomIn" to="." method="_on_ZoomIn_pressed"]
 [connection signal="pressed" from="VBox/HBox3/VBox/ZoomOut" to="." method="_on_ZoomOut_pressed"]
