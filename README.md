@@ -24,8 +24,8 @@
 
 ![Screen Shot](https://raw.githubusercontent.com/IoeCmcomc/HuayAtlas/main/screenshots/startup.png?raw=true)
 
-HuayAtlas là phần mềm tập bản đồ Việt Nam hoạt động không cần kết nối mạng, chạy trên nền tảng Windows và Android, được thiết kế *theo phong cách* của [Atlat Địa lí Việt Nam (NXB Giáo dục Việt Nam)](https://nhasachphuongnam.com/vi/atlat-dia-li-viet-nam-vi-2.html) với thông tin và số liệu mới hơn (2019 đến 2022).
-Lấy cảm hứng từ [ý tưởng này](http://ytuongsangtao.net/chi-tiet-ytst/do-duy-khanh-1273030.html), phần mềm bao gồm một số chức năng cơ bản sau:
+HuayAtlas là phần mềm tập bản đồ Việt Nam hoạt động không cần kết nối mạng, chạy trên nền tảng Windows và Android, được thiết kế *theo phong cách* của [Atlat Địa lí Việt Nam (NXB Giáo dục Việt Nam)](https://www.bandotranhanh.vn/vi/atlat-tap-ban-do/i1397/atlat-dia-li-viet-nam.html) với thông tin và số liệu mới hơn (2019 đến 2022).
+Lấy cảm hứng từ [ý tưởng này](https://web.archive.org/web/20220919052845/ytuongsangtao.net/chi-tiet-ytst/do-duy-khanh-1273030.html) (*[liên kết gốc](http://ytuongsangtao.net/chi-tiet-ytst/do-duy-khanh-1273030.html)*), phần mềm bao gồm một số chức năng cơ bản sau:
 - Phóng to và thu nhỏ
 - Lưới kinh độ, vĩ độ
 - Hình ảnh vệ tinh
@@ -38,8 +38,8 @@ Phần mềm hiện đang trong quá trình phát triển nên có thể sẽ c�
 ## Cài đặt
 Tải phiên bản mới nhất tại [đây](https://github.com/IoeCmcomc/HuayAtlas/releases/latest).
 
-**Android**: Tải xuống tệp đuôi .apk và cài đặt ứng dụng.
-**Windows**: Tải xuống tệp đuôi _win32.zip, giải nén vào một thư mục riêng rồi mở tệp HuayAtlas.exe.
+**Android**: Tải xuống tệp đuôi .apk và cài đặt ứng dụng.  
+**Windows**: Tải xuống tệp đuôi _win32.zip, giải nén vào một thư mục riêng rồi mở tệp HuayAtlas.exe.  
 
 ## Giấy phép
 
